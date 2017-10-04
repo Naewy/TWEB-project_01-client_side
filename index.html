@@ -62,22 +62,7 @@
 <a id="nom">Name</a>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    //TODO parser le json que je recois en un objet
-  $(document).ready(function () {
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", "http://localhost:3000/data");
-    xhttp.send();
-
-    xhttp.onreadystatechange = () => {
-      document.getElementById("entreprise").innerHTML = xhttp.responseText;
-      console.log(xhttp.responseText);
-    };
-
-    $("#nom").text("Test");
-  });
-</script>
+<script src="js/generate.js"></script>
 
 <section>
     <div class="container">
