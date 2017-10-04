@@ -1,0 +1,12 @@
+table {
+    width: 40%;
+    margin: auto;
+}
+
+th {
+    text-align: center;
+}
+
+td[id=nb_issues] {
+    text-align: center;
+}
