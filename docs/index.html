@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="css/index.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
 
@@ -58,26 +60,16 @@
     </div>
 </header>
 
-<a id="entreprise">Entreprise</a>
-<a id="nom">Name</a>
+<table>
+    <caption>Number of issues per repo</caption>
+    <tr>
+        <th>Repo's Name</th>
+        <th># Issues</th>
+    </tr>
+</table>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    //TODO parser le json que je recois en un objet
-  $(document).ready(function () {
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", "http://localhost:3000/data");
-    xhttp.send();
-
-    xhttp.onreadystatechange = () => {
-      document.getElementById("entreprise").innerHTML = xhttp.responseText;
-      console.log(xhttp.responseText);
-    };
-
-    $("#nom").text("Test");
-  });
-</script>
+<script src="js/generate.js"></script>
 
 <section>
     <div class="container">
