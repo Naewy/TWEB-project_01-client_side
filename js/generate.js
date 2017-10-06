@@ -5,7 +5,7 @@ $(document).ready(function () {
   const NB_ENTRIES = 10;
 
   // Makes the request to get the data
-  xhttp.open("GET", "https://raw.githubusercontent.com/Naewy/TWEB-project_01-client_side/master/docs/data/data.txt");
+  xhttp.open("GET", "https://raw.githubusercontent.com/Naewy/TWEB-project_01-client_side/master/docs/data/data.json");
   xhttp.responseType = "json";
   xhttp.send();
 
