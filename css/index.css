@@ -1,12 +1,37 @@
 table {
     width: 40%;
     margin: auto;
-}
-
-th {
-    text-align: center;
+    margin-top: 50px;
 }
 
 td[id=nb_issues] {
+    text-align: center;
+}
+
+td[id=name] {
+    padding-left: 40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+    background-color: #b4bab8
+}
+
+caption {
     text-align: center;
 }
