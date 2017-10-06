@@ -1,4 +1,3 @@
-//TODO parser le json que je recois en un objet
 $(document).ready(function () {
   let xhttp = new XMLHttpRequest();
 
