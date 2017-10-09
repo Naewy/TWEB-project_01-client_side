@@ -1,4 +1,3 @@
-//TODO parser le json que je recois en un objet
 $(document).ready(function () {
   let xhttp = new XMLHttpRequest();
 
@@ -6,7 +5,7 @@ $(document).ready(function () {
   const NB_ENTRIES = 10;
 
   // Makes the request to get the data
-  xhttp.open("GET", "https://sheltered-wave-21391.herokuapp.com/data");
+  xhttp.open("GET", "https://raw.githubusercontent.com/Naewy/TWEB-project_01-client_side/master/docs/data/data.json");
   xhttp.responseType = "json";
   xhttp.send();
 
@@ -20,7 +19,7 @@ $(document).ready(function () {
 
       // Add dynamically all the repos to the table
       for (let i = 0; i < object.length; i++) {
-        $("table").append(`<tr><td>${object[i].name}</td><td id="nb_issues">${object[i].nb_issues}</td></tr>`);
+        $("table").append(`<tr><td id="name">${object[i].name}</td><td id="nb_issues">${object[i].nb_issues}</td></tr>`);
       }
     }
   };
