@@ -1,5 +1,5 @@
 table {
-    width: 40%;
+    width: 50%;
     margin: auto;
     margin-top: 50px;
 }
@@ -37,6 +37,10 @@ caption {
 }
 
 canvas {
-    width: 50%;
+    width: 70%;
     margin:auto;
+}
+
+.p-5[id=image] {
+    text-align: right;
 }
