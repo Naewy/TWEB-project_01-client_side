@@ -35,3 +35,8 @@ tr:hover{
 caption {
     text-align: center;
 }
+
+canvas {
+    width: 50%;
+    margin:auto;
+}
