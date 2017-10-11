@@ -107,7 +107,7 @@
 
                         Every day, a new one is selected and the top 10 repositories are listed in the table and the
                         graph bellow. Today's organisation is
-                        <span id="today"></span>. All the data are gathered via the GitHub <a
+                        <span class="today"></span>. All the data are gathered via the GitHub <a
                                 href="https://developer.github.com/v3/">API</a> and the results
                         are stored on our GitHub repository for later use.</p>
                 </div>
@@ -121,11 +121,10 @@
 <section>
     <div id="tableDescription">
         <h2 class="display-4">Table view</h2>
-        <p><a href="https://github.com/">GitHub</a> is a web-based Git or version control repository and Internet
-            hosting service. It is mostly
-            used for code. It offers all of the distributed version control and source code management functionality
-            of Git as well as adding its own features. It provides access control and several collaboration features
-            such as bug tracking, feature requests, task management, and wikis for every project</p>
+        <p>The table bellow contains a list of the top 10 repos from <span class="today"></span> that contain
+        the higher number of open issues. In the information column, you can find the repo's name and a
+        brief description of the latter. If you click on the repo's name, you will be automatically redirected to
+        the corresponding GitHub page. Entries are automatically sorted by the number of open issues.</p>
     </div>
 </section>
 
@@ -133,8 +132,8 @@
     <div id="table">
         <caption>Number of issues per repo</caption>
         <tr>
-            <th>Repo's Name</th>
-            <th># Issues</th>
+            <th>Information</th>
+            <th>Open Issues</th>
         </tr>
     </div>
 </table>
@@ -144,15 +143,15 @@
 <section>
     <div id="graphDescritpion">
         <h2 class="display-4">Graphical view</h2>
-        <p><a href="https://github.com/">GitHub</a> is a web-based Git or version control repository and Internet
-            hosting service. It is mostly
-            used for code. It offers all of the distributed version control and source code management functionality
-            of Git as well as adding its own features. It provides access control and several collaboration features
-            such as bug tracking, feature requests, task management, and wikis for every project</p>
+        <p>With the help of the graphical representation bellow, it is easier to have an idea
+        about how the number of open issues could be different between repositories.</p>
+        <p>By hovering the mouse on any bar, you can have a count of issues.</p>
     </div>
 </section>
 
 <canvas id="myChart"></canvas>
+<canvas id="myDoughnutChart"></canvas>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>

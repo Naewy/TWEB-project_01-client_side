@@ -20,7 +20,7 @@ $(document).ready(function () {
       }
 
       $("#entreprise").text(object[0].entreprise);
-      $("#today").text(object[0].entreprise);
+      $(".today").text(object[0].entreprise);
 
       // Call the drawChart function to draw the chart with de acquired data
       drawChart(object);

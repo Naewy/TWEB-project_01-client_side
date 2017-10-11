@@ -39,6 +39,7 @@ caption {
 canvas {
     width: 60%;
     margin:auto;
+    padding-bottom: 150px;
 }
 
 .overlay {
@@ -77,4 +78,8 @@ span {
     width: 60%;
     margin: auto;
     margin-top: 50px;
+}
+
+a {
+    font-weight: bold;
 }

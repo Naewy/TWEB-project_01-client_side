@@ -1,5 +1,5 @@
 table {
-    width: 40%;
+    width: 60%;
     margin: auto;
     margin-top: 50px;
 }
@@ -34,4 +34,52 @@ tr:hover{
 
 caption {
     text-align: center;
+}
+
+canvas {
+    width: 60%;
+    margin:auto;
+    padding-bottom: 150px;
+}
+
+.overlay {
+    padding-bottom: 10px;
+}
+
+.p-5[id=img] {
+    text-align: right;
+}
+.p-5[id=img2] {
+    text-align: left;
+    margin: auto;
+    width: 400px;
+}
+
+.p-5 {
+    width:600px;
+}
+
+h3[id=entreprise] {
+    color: white;
+    margin-top: 100px;
+    font-size: 50pt;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+#tableDescription, #graphDescritpion {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+a {
+    font-weight: bold;
 }

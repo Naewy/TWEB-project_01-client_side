@@ -25,7 +25,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">GitHub Analytics</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,13 +38,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="index.html#img">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="index.html#tableDescription">Table</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="index.html#graphDescritpion">Graph</a>
                 </li>
             </ul>
         </div>
@@ -56,40 +56,108 @@
         <div class="container">
             <h1 class="display-1 text-white">GitHub Analytics</h1>
             <h2 class="display-4 text-white">Comparing issues in repos</h2>
+            <h3 id="entreprise"></h3>
         </div>
     </div>
 </header>
 
-<table>
-    <caption>Number of issues per repo</caption>
-    <tr>
-        <th>Repo's Name</th>
-        <th># Issues</th>
-    </tr>
-</table>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/generate.js"></script>
+<!--  ABOUT  -->
 
 <section>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 order-2">
-                <div class="p-5">
-                    <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=836" alt="">
+                <div class="p-5" id="img">
+                    <img class="img-fluid rounded-circle"
+                         src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.molecularecologist.com%2Fwp-content%2Fuploads%2F2013%2F11%2Fgithub-logo.jpg&f=1"
+                         alt="">
                 </div>
             </div>
             <div class="col-md-6 order-1">
                 <div class="p-5">
-                    <h2 class="display-4">For those about to rock...</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit
-                        iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
-                        voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    <h2 class="display-4">What is GitHub</h2>
+                    <p><a href="https://github.com/">GitHub</a> is a web-based Git or version control repository and
+                        Internet hosting service. It is mostly
+                        used for code. It offers all of the distributed version control and source code management
+                        functionality
+                        of Git as well as adding its own features. It provides access control and several collaboration
+                        features
+                        such as bug tracking, feature requests, task management, and wikis for every project</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="p-5" id="img2">
+                    <img class="img-fluid rounded-circle"
+                         src="http://www.signaturesignworx.com/wp-content/uploads/2015/03/how-it-works-icon1.png"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-5">
+                    <h2 class="display-4">How does it work</h2>
+                    <p>This website is designed to show the number of issues that are currently in an open state for a
+                        randomly chosen enterprise.
+
+                        Every day, a new one is selected and the top 10 repositories are listed in the table and the
+                        graph bellow. Today's organisation is
+                        <span class="today"></span>. All the data are gathered via the GitHub <a
+                                href="https://developer.github.com/v3/">API</a> and the results
+                        are stored on our GitHub repository for later use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- TABLE -->
+<section>
+    <div id="tableDescription">
+        <h2 class="display-4">Table view</h2>
+        <p>The table bellow contains a list of the top 10 repos from <span class="today"></span> that contain
+        the higher number of open issues. In the information column, you can find the repo's name and a
+        brief description of the latter. If you click on the repo's name, you will be automatically redirected to
+        the corresponding GitHub page. Entries are automatically sorted by the number of open issues.</p>
+    </div>
+</section>
+
+<table>
+    <div id="table">
+        <caption>Number of issues per repo</caption>
+        <tr>
+            <th>Information</th>
+            <th>Open Issues</th>
+        </tr>
+    </div>
+</table>
+
+<!--  GRAPH  -->
+
+<section>
+    <div id="graphDescritpion">
+        <h2 class="display-4">Graphical view</h2>
+        <p>With the help of the graphical representation bellow, it is easier to have an idea
+        about how the number of open issues could be different between repositories.</p>
+        <p>By hovering the mouse on any bar, you can have a count of issues.</p>
+    </div>
+</section>
+
+<canvas id="myChart"></canvas>
+<canvas id="myDoughnutChart"></canvas>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="js/mychart.js"></script>
+<script src="js/generate.js"></script>
+
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
