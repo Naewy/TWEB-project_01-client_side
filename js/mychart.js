@@ -8,8 +8,13 @@ function drawChart(objectList) {
 
   // Populate our customs array with our data
   objectList.forEach((element) => {
-    mylabels.push(element.name);
-    mydata.push(element.nb_issues);
+
+    if(element.name !== undefined) {
+      mylabels.push(element.name);
+      mydata.push(element.nb_issues);
+    }
+
+    console.log(mylabels);
   });
 
   let myChart = new Chart(ctx, {
