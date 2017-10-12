@@ -39,7 +39,7 @@ caption {
 canvas {
     width: 60%;
     margin:auto;
-    padding-bottom: 150px;
+    padding-bottom: 20px;
 }
 
 .overlay {
@@ -74,12 +74,25 @@ span {
     font-weight: bold;
 }
 
-#tableDescription, #graphDescritpion {
+#tableDescription, #graphDescritpion, #graphDescritpionPie {
     width: 60%;
     margin: auto;
     margin-top: 50px;
 }
 
+.display-4[id=chartTitle], .display-4[id=chartTitle2] {
+    margin-bottom: 30px;
+}
+
 a {
     font-weight: bold;
+}
+
+.gray {
+    background-color: rgb(240, 240, 240);
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.white {
 }

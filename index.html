@@ -118,39 +118,57 @@
 
 
 <!-- TABLE -->
-<section>
-    <div id="tableDescription">
-        <h2 class="display-4">Table view</h2>
-        <p>The table bellow contains a list of the top 10 repos from <span class="today"></span> that contain
-        the higher number of open issues. In the information column, you can find the repo's name and a
-        brief description of the latter. If you click on the repo's name, you will be automatically redirected to
-        the corresponding GitHub page. Entries are automatically sorted by the number of open issues.</p>
-    </div>
-</section>
+<div class="gray">
+    <section>
+        <div id="tableDescription">
+            <h2 class="display-4">Table view</h2>
+            <p>The table bellow contains a list of the top 10 repos from <span class="today"></span> that contain
+                the higher number of open issues. In the information column, you can find the repo's name and a
+                brief description of the latter. If you click on the repo's name, you will be automatically redirected
+                to
+                the corresponding GitHub page. Entries are automatically sorted by the number of open issues.</p>
+        </div>
+    </section>
 
-<table>
-    <div id="table">
-        <caption>Number of issues per repo</caption>
-        <tr>
-            <th>Information</th>
-            <th>Open Issues</th>
-        </tr>
-    </div>
-</table>
+    <table>
+        <div id="table">
+            <caption>Number of issues per repo</caption>
+            <tr>
+                <th>Information</th>
+                <th>Open Issues</th>
+            </tr>
+        </div>
+    </table>
+</div>
 
 <!--  GRAPH  -->
 
-<section>
-    <div id="graphDescritpion">
-        <h2 class="display-4">Graphical view</h2>
-        <p>With the help of the graphical representation bellow, it is easier to have an idea
-        about how the number of open issues could be different between repositories.</p>
-        <p>By hovering the mouse on any bar, you can have a count of issues.</p>
-    </div>
-</section>
+<div class="white">
+    <section>
+        <div id="graphDescritpion">
+            <h2 class="display-4" id="chartTitle2">Bar graph view</h2>
+            <p>With the help of the graphical representation bellow, it is easier to have an idea
+                about how the number of open issues could be different between repositories.</p>
+            <p>By hovering the mouse on any bar, you can have a count of issues.</p>
+        </div>
+    </section>
 
-<canvas id="myChart"></canvas>
-<canvas id="myDoughnutChart"></canvas>
+    <canvas id="myChart"></canvas>
+
+</div>
+
+
+<div class="gray">
+    <section>
+        <div id="graphDescritpionPie">
+            <h2 class="display-4" id="chartTitle">Pie chart view</h2>
+            <p>By using the pie chart view, you can better appreciate the differences between some repositories. By clicking
+            ont the labels on the top of the graph, you can disable or enable the data in the graph.</p>
+        </div>
+    </section>
+
+    <canvas id="myDoughnutChart"></canvas>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
