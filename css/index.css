@@ -70,10 +70,6 @@ p {
     text-align: justify;
 }
 
-span {
-    font-weight: bold;
-}
-
 #tableDescription, #graphDescritpion, #graphDescritpionPie {
     width: 60%;
     margin: auto;
@@ -95,4 +91,11 @@ a {
 }
 
 .white {
+}
+
+#logo {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    display: block;
 }

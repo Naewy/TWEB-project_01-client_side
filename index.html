@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>GitHub Analytics</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -117,6 +117,28 @@
 </section>
 
 
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2">
+                <div class="p-5">
+                    <img id="logo"
+                         src=""
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6 order-1">
+                <div class="p-5">
+                    <h2 class="display-4">Today's Enterprise</h2>
+                    <p>Today's analyzed repository belong to <a id="url_entreprise" href=""><span class="today"></span></a>.
+                        <br><span class="entreprise_descr"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- TABLE -->
 <div class="gray">
     <section>
@@ -155,40 +177,40 @@
 
     <canvas id="myChart"></canvas>
 
-</div>
+    <div class="gray">
+        <section>
+            <div id="graphDescritpionPie">
+                <h2 class="display-4" id="chartTitle">Pie chart view</h2>
+                <p>By using the pie chart view, you can better appreciate the differences between some repositories. By
+                    clicking
+                    ont the labels on the top of the graph, you can disable or enable the data in the graph.</p>
+            </div>
+        </section>
 
-
-<div class="gray">
-    <section>
-        <div id="graphDescritpionPie">
-            <h2 class="display-4" id="chartTitle">Pie chart view</h2>
-            <p>By using the pie chart view, you can better appreciate the differences between some repositories. By clicking
-            ont the labels on the top of the graph, you can disable or enable the data in the graph.</p>
-        </div>
-    </section>
-
-    <canvas id="myDoughnutChart"></canvas>
-</div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
-<script src="js/mychart.js"></script>
-<script src="js/generate.js"></script>
-
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; GHA 2017</p>
+        <canvas id="myDoughnutChart"></canvas>
     </div>
-    <!-- /.container -->
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script src="js/mychart.js"></script>
+    <script src="js/generate.js"></script>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; GHA 2017</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</div>
 
 </body>
 
