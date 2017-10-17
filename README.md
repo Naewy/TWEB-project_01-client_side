@@ -1,10 +1,10 @@
-# TWEB 2017#
+# TWEB 2017
 
-##GitHub Analitics ##
+##GitHub Analitics
 
 This project uses a collection of other repos in order to work. 
 
-####Architecture####
+####Architecture
 The GitHub analytics projects is base on several componants. First of all, the client side of the project is hosted directly on github via GitHub Pages. You can consult the website directly with the following link : 
 
 https://naewy.github.io/TWEB-project_01-client_side/
@@ -15,7 +15,7 @@ https://github.com/Naewy/TWEB-project_01-agent
 
 The agent is deployed in the cloud on heroku. Read the repo's README to know more about it.
 
-####Local use ####
+####Local use
 
 In order to use a local client server, you can proceed with the following steps : 
 
