@@ -1,10 +1,10 @@
 # TWEB 2017
 
-##GitHub Analitics
+## GitHub Analitics
 
 This project uses a collection of other repos in order to work. 
 
-####Architecture
+#### Architecture
 The GitHub analytics projects is base on several componants. First of all, the client side of the project is hosted directly on github via GitHub Pages. You can consult the website directly with the following link : 
 
 https://naewy.github.io/TWEB-project_01-client_side/
@@ -15,7 +15,7 @@ https://github.com/Naewy/TWEB-project_01-agent
 
 The agent is deployed in the cloud on heroku. Read the repo's README to know more about it.
 
-####Local use
+#### Local use
 
 In order to use a local client server, you can proceed with the following steps : 
 
@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/Naewy/TWEB-project_01-client_side/master/docs/
 
 If you want to change the source of the data, please update line 4 in the "generate.js" file. Make sur to have the appropriate data format.
 
-####Data Format####
+#### Data Format
 
 The data the client is fetching is formatted in a certain way. You can't change the format if you want the client to work "out of the box".
 
@@ -45,7 +45,8 @@ Here is how the JSON file is structured :
 		{
 			"id":13535801,
 			"name":"android_bootable_recovery",
-			"description":null,"url":"https://github.com/omnirom/android_bootable_recovery",
+			"description":null,
+			"url":"https://github.com/omnirom/android_bootable_recovery",
 			"nb_issues":122
 		},
 		{
