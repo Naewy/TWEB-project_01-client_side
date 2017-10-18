@@ -1,6 +1,6 @@
 # TWEB 2017
 
-## GitHub Analitics
+## GitHub Analytics
 Matthieu Chatelan, Lara Chauffoureaux
 
 ---
