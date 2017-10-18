@@ -1,4 +1,4 @@
-# TWEB 2017#
+# TWEB 2017
 
 ## GitHub Analitics
 
@@ -45,7 +45,8 @@ Here is how the JSON file is structured :
 		{
 			"id":13535801,
 			"name":"android_bootable_recovery",
-			"description":null,"url":"https://github.com/omnirom/android_bootable_recovery",
+			"description":null,
+			"url":"https://github.com/omnirom/android_bootable_recovery",
 			"nb_issues":122
 		},
 		{
