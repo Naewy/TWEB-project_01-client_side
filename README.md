@@ -1,6 +1,9 @@
 # TWEB 2017
 
 ## GitHub Analitics
+Matthieu Chatelan, Lara Chauffoureaux
+
+---
 
 This project uses a collection of other repos in order to work. 
 
