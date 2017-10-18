@@ -14,7 +14,8 @@ xhttp.onreadystatechange = () => {
 
     // Add dynamically all the repos to the table
     for (let i = 1; i < object.length; i += 1) {
-      $('table').append(`<tr><td id="name"><a href="${object[i].url}">${object[i].name}</a> - ${object[i].description}</td><td id="nb_issues">${object[i].nb_issues}</td></tr>`);
+      const description = object[i].description === null ? '' : object[i].description;
+      $('table').append(`<tr><td id="name"><a href="${object[i].url}">${object[i].name}</a> - ${description}</td><td id="nb_issues">${object[i].nb_issues}</td></tr>`);
     }
 
     $('#entreprise').text(object[0].name);
