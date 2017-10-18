@@ -20,7 +20,7 @@ xhttp.onreadystatechange = () => {
     $('#entreprise').text(object[0].name);
     $('.today').text(object[0].name);
 
-    if (object[0].description != null) {
+    if (object[0].description !== undefined) {
       $('.entreprise_descr').text(`A brief description was given by the enterprise to describe them : ${object[0].description}`);
     }
     $('#logo').attr('src', object[0].logo);
