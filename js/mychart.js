@@ -14,8 +14,6 @@ function drawChart(objectList) {
       mylabels.push(element.name);
       mydata.push(element.nb_issues);
     }
-
-    console.log(mylabels);
   });
 
   /* global Chart */
