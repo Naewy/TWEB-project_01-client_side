@@ -8,7 +8,7 @@ Matthieu Chatelan, Lara Chauffoureaux
 This project uses a collection of other repos in order to work. 
 
 #### Architecture
-The GitHub analytics projects is base on several componants. First of all, the client side of the project is hosted directly on github via GitHub Pages. You can consult the website directly with the following link : 
+The GitHub analytics projects is based on several componants. First of all, the client side of the project is hosted directly on github via GitHub Pages. You can consult the website directly with the following link : 
 
 https://naewy.github.io/TWEB-project_01-client_side/
 

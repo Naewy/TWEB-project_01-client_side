@@ -24,7 +24,7 @@ xhttp.onreadystatechange = () => {
     $('.today').text(object[0].name);
 
     // If the enterprise gave a description, display it
-    if (object[0].description !== undefined) {
+    if (object[0].description !== "undefined") {
       $('.entreprise_descr').text(`A brief description was given by the enterprise to describe them : ${object[0].description}`);
     }
     // Add the logo of the enterprise
